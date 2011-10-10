@@ -7,6 +7,9 @@
 -- Mangos 1.12.xx (Mangos) zu Oregoncore 2.4.3 (Trinity)
 -- GMLVL neu verteilen!!!
 ALTER table account drop gmlevel;
+DROP TABLE uptime;
+
+UPDATE account SET expansion=1;
 
 SET FOREIGN_KEY_CHECKS=0;
 DROP TABLE IF EXISTS `account_access`;
@@ -26,4 +29,3 @@ CREATE TABLE `logs` (
   `string` text
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1;
 
-ALTER TABLE uptime;
