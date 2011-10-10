@@ -10,7 +10,7 @@
 -- Backups machen.
 -- Ehre werden Resetet.
 -- Vor den Converten Bitte alle Item die sich in Actionshaus befinden auslaufen lassen ansonsten sind sie weg!
--- Alles inruge testen wie: Skills, Spells und Items ob sie noch vorhanden sind
+-- Alles inruhe testen wie: Skills, Spells und Items ob sie noch vorhanden sind
 -- Klassen Spells evtl nochmal alle reseten!
 -- Feedback geben.
 
