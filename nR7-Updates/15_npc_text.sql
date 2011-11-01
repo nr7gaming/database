@@ -1,0 +1,3 @@
+-- NPC: Mikhail "TEXT" hinzugefügt
+DELETE FROM `npc_text` WHERE `ID`='1713';
+INSERT INTO `npc_text` VALUES ('1713', 'Give me a couple minutes, $N. There was some excitement in here a moment ago, and I just want to make sure things have died back down. I\'ll talk to you soon enough.', '', '0', '1', '0', '0', '0', '0', '0', '0', '', '', '0', '0', '0', '0', '0', '0', '0', '0', '', '', '0', '0', '0', '0', '0', '0', '0', '0', '', '', '0', '0', '0', '0', '0', '0', '0', '0', '', '', '0', '0', '0', '0', '0', '0', '0', '0', '', '', '0', '0', '0', '0', '0', '0', '0', '0', '', '', '0', '0', '0', '0', '0', '0', '0', '0', '', '', '0', '0', '0', '0', '0', '0', '0', '0');
