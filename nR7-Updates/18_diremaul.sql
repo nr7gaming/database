@@ -6,6 +6,7 @@ INSERT INTO `creature` (`guid`,`id`,`map`,`modelid`,`equipment_id`,`position_x`,
 
 -- NPC: Cho'Rush der Beobachter
 UPDATE `creature_template` SET `ScriptName`="", `gossip_menu_id`=5742 WHERE `entry`=14324;
+DELETE FROM `gossip_menu` WHERE `id`=5742;
 INSERT INTO `gossip_menu` VALUES ('5742', '6918', '0', '0', '0', '0', '0', '0');
 DELETE FROM `npc_text` WHERE `ID`=6918;
 INSERT INTO `npc_text` VALUES ('6918', 'Uh... I sorry I attack you boss.  You no kill me, please OK!?  You da king now, and I help make your tribute better!', '', '0', '1', '0', '0', '0', '0', '0', '0', '', '', '0', '0', '0', '0', '0', '0', '0', '0', '', '', '0', '0', '0', '0', '0', '0', '0', '0', '', '', '0', '0', '0', '0', '0', '0', '0', '0', '', '', '0', '0', '0', '0', '0', '0', '0', '0', '', '', '0', '0', '0', '0', '0', '0', '0', '0', '', '', '0', '0', '0', '0', '0', '0', '0', '0', '', '', '0', '0', '0', '0', '0', '0', '0', '0');
@@ -21,6 +22,7 @@ INSERT INTO `creature` (`guid`,`id`,`map`,`modelid`,`equipment_id`,`position_x`,
 
 -- NPC: Hauptmann Krombruch
 UPDATE `creature_template` SET `ScriptName`="", `gossip_menu_id`=5739 WHERE `entry`=14308;
+DELETE FROM `gossip_menu` WHERE `id`=5739;
 INSERT INTO `gossip_menu` VALUES ('5739', '6914', '0', '0', '0', '0', '0', '0');
 DELETE FROM `creature` WHERE `id`=14325;
 INSERT INTO `creature` (`guid`,`id`,`map`,`modelid`,`equipment_id`,`position_x`,`position_y`,`position_z`,`orientation`,`spawntimesecs`,`spawndist`,`currentwaypoint`,`curhealth`,`curmana`,`DeathState`,`MovementType`) VALUES
@@ -47,30 +49,25 @@ INSERT INTO `creature` (`guid`,`id`,`map`,`modelid`,`equipment_id`,`position_x`,
 -- NPC: Isalien
 UPDATE `creature_template` SET `ScriptName`="" WHERE `entry`=16097;
 
-
 UPDATE `creature_template` SET `ScriptName`="" WHERE `entry`=11501;
 DELETE FROM `creature` WHERE `id`=11501;
 INSERT INTO `creature` (`guid`,`id`,`map`,`modelid`,`equipment_id`,`position_x`,`position_y`,`position_z`,`orientation`,`spawntimesecs`,`spawndist`,`currentwaypoint`,`curhealth`,`curmana`,`DeathState`,`MovementType`) VALUES
 (138335, 11501, 429, 11583, 0, 829.697, 481.328, 37.4015, 3.19395, 7200, 0, 0, 29133, 0, 0, 0);
-
 
 UPDATE `creature_template` SET `ScriptName`="" WHERE `entry`=14327;
 DELETE FROM `creature` WHERE `id`=14327;
 INSERT INTO `creature` (`guid`, `id`, `map`, `modelid`, `equipment_id`, `position_x`, `position_y`, `position_z`, `orientation`, `spawntimesecs`, `spawndist`, `currentwaypoint`, `curhealth`, `curmana`, `DeathState`, `MovementType`) VALUES 
 (138344, 14327, 429, 14378, 0, 5.33627, -449.741, 16.4166, 5.38513, 7200, 0, 0, 17816, 8964, 0, 0);
 
-
 UPDATE `creature_template` SET `ScriptName`="" WHERE `entry`=11487;
 DELETE FROM `creature` WHERE `id`=11487;
 INSERT INTO `creature` (`guid`,`id`,`map`,`modelid`,`equipment_id`,`position_x`,`position_y`,`position_z`,`orientation`,`spawntimesecs`,`spawndist`,`currentwaypoint`,`curhealth`,`curmana`,`DeathState`,`MovementType`) VALUES
 (138100, 11487, 429, 14384, 0, 33.14, 575.552, -4.31052, 4.53786, 7200, 0, 0, 20757, 9736, 0, 0);
 
-
 UPDATE `creature_template` SET `ScriptName`="" WHERE `entry`=14349;
 DELETE FROM `creature` WHERE `id`=14349;
 INSERT INTO `creature` (`guid`,`id`,`map`,`modelid`,`equipment_id`,`position_x`,`position_y`,`position_z`,`orientation`,`spawntimesecs`,`spawndist`,`currentwaypoint`,`curhealth`,`curmana`,`DeathState`,`MovementType`) VALUES
 (125412, 14349, 429, 14380, 0, 4.27714, -447.749, 16.4171, 5.51539, 7200, 0, 0, 6477, 6489, 0, 0);
-
 
 UPDATE `creature_template` SET `ScriptName`="", `gossip_menu_id`=5736 WHERE `entry`=11486;
 INSERT INTO `gossip_menu` VALUES ('5736', '6909', '0', '0', '0', '0', '0', '0');
@@ -78,30 +75,25 @@ DELETE FROM `creature` WHERE `id`=11486;
 INSERT INTO `creature` (`guid`,`id`,`map`,`modelid`,`equipment_id`,`position_x`,`position_y`,`position_z`,`orientation`,`spawntimesecs`,`spawndist`,`currentwaypoint`,`curhealth`,`curmana`,`DeathState`,`MovementType`) VALUES
 (137881, 11486, 429, 11256, 0, 132.626, 625.913, -48.3836, 4.62512, 7200, 0, 0, 31440, 0, 0, 0);
 
-
 UPDATE `creature_template` SET `ScriptName`="" WHERE `entry`=14506;
 DELETE FROM `creature` WHERE `id`=14506;
 INSERT INTO `creature` (`guid`,`id`,`map`,`modelid`,`equipment_id`,`position_x`,`position_y`,`position_z`,`orientation`,`spawntimesecs`,`spawndist`,`currentwaypoint`,`curhealth`,`curmana`,`DeathState`,`MovementType`) VALUES
 (80245, 14506, 429, 14556, 0, -2.88275, 705.305, -24.5804, 4.4783, 7200, 0, 1, 31000, 5136, 0, 0);
-
 
 UPDATE `creature_template` SET `ScriptName`="" WHERE `entry`=11490;
 DELETE FROM `creature` WHERE `id`=11490;
 INSERT INTO `creature` (`guid`,`id`,`map`,`modelid`,`equipment_id`,`position_x`,`position_y`,`position_z`,`orientation`,`spawntimesecs`,`spawndist`,`currentwaypoint`,`curhealth`,`curmana`,`DeathState`,`MovementType`) VALUES
 (138117, 11490, 429, 11335, 0, -34.983, -448, -37.8785, 0.191986, 7200, 0, 0, 22272, 0, 0, 0);
 
-
 UPDATE `creature_template` SET `ScriptName`="" WHERE `entry`=14323;
 DELETE FROM `creature` WHERE `id`=14323;
 INSERT INTO `creature` (`guid`,`id`,`map`,`modelid`,`equipment_id`,`position_x`,`position_y`,`position_z`,`orientation`,`spawntimesecs`,`spawndist`,`currentwaypoint`,`curhealth`,`curmana`,`DeathState`,`MovementType`) VALUES
 (138339, 14323, 429, 11561, 0, 524.055, 587.067, -25.4022, 2.18337, 7200, 5, 0, 23688, 0, 0, 1);
 
-
 UPDATE `creature_template` SET `ScriptName`="" WHERE `entry`=14326;
 DELETE FROM `creature` WHERE `id`=14326;
 INSERT INTO `creature` (`guid`,`id`,`map`,`modelid`,`equipment_id`,`position_x`,`position_y`,`position_z`,`orientation`,`spawntimesecs`,`spawndist`,`currentwaypoint`,`curhealth`,`curmana`,`DeathState`,`MovementType`) VALUES
 (138343, 14326, 429, 11561, 0, 410.711, -3.15041, -24.558, 5.28835, 7200, 0, 0, 23688, 0, 0, 0);
-
 
 UPDATE `creature_template` SET `ScriptName`="" WHERE `entry`=14321;
 DELETE FROM `creature` WHERE `id`=14321;
@@ -110,32 +102,29 @@ INSERT INTO `creature` (`guid`,`id`,`map`,`modelid`,`equipment_id`,`position_x`,
 
 UPDATE `creature_template` SET `ScriptName`="" WHERE `entry`=11467;
 
-
 UPDATE `creature_template` SET `ScriptName`="" WHERE `entry`=11489;
 DELETE FROM `creature` WHERE `id`=11489;
 INSERT INTO `creature` (`guid`,`id`,`map`,`modelid`,`equipment_id`,`position_x`,`position_y`,`position_z`,`orientation`,`spawntimesecs`,`spawndist`,`currentwaypoint`,`curhealth`,`curmana`,`DeathState`,`MovementType`) VALUES
 (138115, 11489, 429, 14383, 0, 14.3925, 475.848, -23.3028, 1.55431, 7200, 0, 0, 33572, 0, 0, 0);
 
-
 UPDATE `creature_template` SET `ScriptName`="", `gossip_menu_id`=5721 WHERE `entry`=14322;
+DELETE FROM `gossip_menu` WHERE `id`=5721;
 INSERT INTO `gossip_menu` VALUES ('5721', '6894', '0', '0', '0', '0', '0', '0');
 DELETE FROM `creature` WHERE `id`=14322;
 INSERT INTO `creature` (`guid`,`id`,`map`,`modelid`,`equipment_id`,`position_x`,`position_y`,`position_z`,`orientation`,`spawntimesecs`,`spawndist`,`currentwaypoint`,`curhealth`,`curmana`,`DeathState`,`MovementType`) VALUES
 (138338, 14322, 429, 11545, 0, 491.231, 97.3879, -2.5004, 4.03171, 7200, 0, 0, 23688, 0, 0, 0);
 
-
 UPDATE `creature_template` SET `ScriptName`="", `gossip_menu_id`=5709 WHERE `entry`=14354;
+DELETE FROM `gossip_menu` WHERE `id`=5709;
 INSERT INTO `gossip_menu` VALUES ('5709', '6877', '0', '0', '0', '0', '0', '0');
 DELETE FROM `creature` WHERE `id`=14354;
 INSERT INTO `creature` (`guid`,`id`,`map`,`modelid`,`equipment_id`,`position_x`,`position_y`,`position_z`,`orientation`,`spawntimesecs`,`spawndist`,`currentwaypoint`,`curhealth`,`curmana`,`DeathState`,`MovementType`) VALUES
 (125700, 14354, 429, 7552, 0, 87.6813, -198.631, -4.13498, 5.82043, 7200, 0, 0, 13362, 13446, 0, 0);
 
-
 -- Spawn: Tür von Gordok (Dire Maul)
 DELETE FROM `gameobject` WHERE `id`=177217;
 INSERT INTO `gameobject` (`guid`,`id`,`map`,`position_x`,`position_y`,`position_z`,`orientation`,`rotation0`,`rotation1`,`rotation2`,`rotation3`,`spawntimesecs`,`animprogress`,`state`) VALUES
 (13428, 177217, 429, 491.204, 515.133, 29.4675, 1.5708, 0, 0, 0.707107, 0.707107, 180, 255, 1);
-
 
 -- NPC: Aasschwärmer
 UPDATE `creature_template` SET `ScriptName`="" WHERE `entry`=13160;
@@ -213,7 +202,6 @@ INSERT INTO `creature` (`guid`,`id`,`map`,`modelid`,`equipment_id`,`position_x`,
 (134725, 13160, 429, 13096, 0, 470.469, -70.5379, -3.88614, 4.39169, 7200, 0, 0, 835, 0, 0, 0),
 (134727, 13160, 429, 13096, 0, 472.982, -31.9458, -3.88275, 1.14398, 7200, 0, 0, 835, 0, 0, 0);
 
-
 -- Spawn: Alzzins Diener
 DELETE FROM `creature` WHERE `id`=11460;
 INSERT INTO `creature` (`guid`,`id`,`map`,`modelid`,`equipment_id`,`position_x`,`position_y`,`position_z`,`orientation`,`spawntimesecs`,`spawndist`,`currentwaypoint`,`curhealth`,`curmana`,`DeathState`,`MovementType`) VALUES
@@ -232,7 +220,6 @@ INSERT INTO `creature` (`guid`,`id`,`map`,`modelid`,`equipment_id`,`position_x`,
 (135100, 11460, 429, 911, 0, 250.207, -372.675, -112.839, 0.331613, 7200, 0, 0, 675, 0, 0, 0),
 (135101, 11460, 429, 911, 0, 252.79, -372.777, -112.676, 5.09636, 7200, 0, 0, 675, 0, 0, 0),
 (135102, 11460, 429, 911, 0, 251.389, -374.372, -113.371, 4.88692, 7200, 0, 0, 675, 0, 0, 0);
-
 
 -- NPC: Arkane Entartung
 UPDATE `creature_template` SET `ScriptName`="" WHERE `entry`=11480;
@@ -254,7 +241,6 @@ INSERT INTO `creature` (`guid`,`id`,`map`,`modelid`,`equipment_id`,`position_x`,
 (137773, 11480, 429, 14253, 0, -142.956, 743.886, -24.497, 0.715585, 7200, 0, 0, 7107, 9476, 0, 0),
 (137774, 11480, 429, 14253, 0, -170.839, 735.324, -24.497, 3.14159, 7200, 0, 0, 7107, 9476, 0, 0),
 (137776, 11480, 429, 14253, 0, 133.537, 434.405, 28.6844, 0.471239, 7200, 0, 0, 7107, 9476, 0, 0);
-
 
 -- NPC: Arkane Rückkopplung
 UPDATE `creature_template` SET `ScriptName`="" WHERE `entry`=14400;
@@ -299,7 +285,6 @@ INSERT INTO `creature` (`guid`,`id`,`map`,`modelid`,`equipment_id`,`position_x`,
 (133817, 14400, 429, 5490, 0, -11.7996, 951.23, -24.5762, 0.35092, 7200, 0, 0, 1895, 2369, 0, 0),
 (133819, 14400, 429, 5490, 0, -6.66835, 948.849, -24.5759, 0.35092, 7200, 0, 0, 1895, 2369, 0, 0);
 
-
 -- NPC: Arkaner Strom
 UPDATE `creature_template` SET `ScriptName`="" WHERE `entry`=14399;
 DELETE FROM `creature` WHERE `id`=14399;
@@ -315,7 +300,6 @@ INSERT INTO `creature` (`guid`,`id`,`map`,`modelid`,`equipment_id`,`position_x`,
 (133223, 14399, 429, 10315, 0, -85.2492, 655.659, -24.6093, 3.36904, 7200, 0, 0, 16583, 9476, 0, 0),
 (133226, 14399, 429, 10315, 0, -8.04339, 952.605, -24.5761, 0.350919, 7200, 0, 0, 16583, 9476, 0, 0);
 
-
 -- NPC: Auge von Immol'thar
 UPDATE `creature_template` SET `ScriptName`="" WHERE `entry`=14396;
 DELETE FROM `creature` WHERE `id`=14399;
@@ -330,7 +314,6 @@ INSERT INTO `creature` (`guid`,`id`,`map`,`modelid`,`equipment_id`,`position_x`,
 (133222, 14399, 429, 14399, 0, -163.845, 815.51, -24.5806, 1.20062, 7200, 0, 0, 16583, 9476, 0, 0),
 (133223, 14399, 429, 14399, 0, -85.2492, 655.659, -24.6093, 3.36904, 7200, 0, 0, 16583, 9476, 0, 0),
 (133226, 14399, 429, 14399, 0, -8.04339, 952.605, -24.5761, 0.350919, 7200, 0, 0, 16583, 9476, 0, 0);
-
 
 -- NPC: Beschützer von Eisenborke
 UPDATE `creature_template` SET `ScriptName`="" WHERE `entry`=11459;
@@ -351,7 +334,6 @@ INSERT INTO `creature` (`guid`,`id`,`map`,`modelid`,`equipment_id`,`position_x`,
 (135084, 11459, 429, 13489, 0, 101.21, 330.55, -4.98576, 5.40841, 7200, 5, 0, 16704, 0, 0, 1),
 (135085, 11459, 429, 13489, 0, 43.1073, 219.233, -4.9858, 3.11267, 7200, 5, 0, 16704, 0, 0, 1),
 (135086, 11459, 429, 13489, 0, 115.092, 290.629, -4.98558, 4.70909, 7200, 0, 0, 16704, 0, 0, 0);
-
 
 -- NPC: Dornenpeitscher
 UPDATE `creature_template` SET `ScriptName`="" WHERE `entry`=13022;
@@ -503,7 +485,6 @@ INSERT INTO `creature` (`guid`,`id`,`map`,`modelid`,`equipment_id`,`position_x`,
 (138094, 13022, 429, 12962, 0, 63.8582, -438.992, -58.5005, -0.855211, 7200, 0, 0, 1900, 0, 0, 0),
 (138096, 13022, 429, 12962, 0, 248.216, -415.539, -119.878, -0.069812, 7200, 0, 0, 1900, 0, 0, 0);
 
-
 -- NPC: Einzelkämpfer der Gordok
 UPDATE `creature_template` SET `ScriptName`="", `gossip_menu_id`=5746 WHERE `entry`=14351;
 DELETE FROM `gossip_menu` WHERE ``entry``=5746;
@@ -516,7 +497,6 @@ INSERT INTO `gossip_menu` VALUES ('5602', '6695', '0', '0', '0', '0', '0', '0');
 DELETE FROM `creature` WHERE `id`=11491;
 INSERT INTO `creature` (`guid`,`id`,`map`,`modelid`,`equipment_id`,`position_x`,`position_y`,`position_z`,`orientation`,`spawntimesecs`,`spawndist`,`currentwaypoint`,`curhealth`,`curmana`,`DeathState`,`MovementType`) VALUES
 (138118, 11491, 429, 13170, 0, -72.1719, -283.252, -57.7497, 4.08407, 7200, 0, 0, 3589, 0, 0, 0);
-
 
 -- NPC: Erscheinung der Eldreth
 UPDATE `creature_template` SET `ScriptName`="" WHERE `entry`=11471;
@@ -537,7 +517,6 @@ INSERT INTO `creature` (`guid`,`id`,`map`,`modelid`,`equipment_id`,`position_x`,
 (136217, 11471, 429, 14365, 0, 32.1369, 566.978, -4.3122, 2.87979, 7200, 0, 0, 6681, 6723, 0, 0),
 (136218, 11471, 429, 14365, 0, 128.655, 439.345, -4.30314, 0.750492, 7200, 0, 0, 6681, 6723, 0, 0);
 
-
 -- NPC: Falrin Rankenweber
 UPDATE `creature_template` SET `gossip_menu_id`=7084 WHERE `entry`=16032;
 DELETE FROM `gossip_menu` WHERE `id`=7084;
@@ -547,7 +526,6 @@ INSERT INTO `npc_text` VALUES ('8336', 'What now?  Can\'t you see I\'m rather bu
 DELETE FROM `creature` WHERE `id`=16032;
 INSERT INTO `creature` (`guid`,`id`,`map`,`modelid`,`equipment_id`,`position_x`,`position_y`,`position_z`,`orientation`,`spawntimesecs`,`spawndist`,`currentwaypoint`,`curhealth`,`curmana`,`DeathState`,`MovementType`) VALUES
 (134785, 16032, 429, 15996, 0, 122.669, 444.578, -48.3768, 5.42797, 7200, 0, 0, 6104, 0, 0, 0);
-
 
 -- Spawn: Faulender Hochgeborener
 DELETE FROM `creature` WHERE `id`=11477;
@@ -570,7 +548,6 @@ INSERT INTO `creature` (`guid`,`id`,`map`,`modelid`,`equipment_id`,`position_x`,
 (137753, 11477, 429, 14391, 0, -8.55244, 526.9, 28.6848, 5.41052, 7200, 0, 0, 3732, 0, 0, 0),
 (137756, 11477, 429, 14391, 0, -90.7518, 404.466, 28.6844, 0.558505, 7200, 0, 0, 3732, 0, 0, 0);
 
-
 -- NPC: Geist der Eldreth
 UPDATE `creature_template` SET `ScriptName`="" WHERE `entry`=11472;
 DELETE FROM `creature` WHERE `id`=11472;
@@ -591,7 +568,6 @@ INSERT INTO `creature` (`guid`,`id`,`map`,`modelid`,`equipment_id`,`position_x`,
 (137657, 11472, 429, 10751, 0, 120.586, 438.521, -4.31108, 1.65806, 7200, 0, 0, 8352, 0, 0, 0),
 (137662, 11472, 429, 10751, 0, 62.4359, 556.919, -4.3074, 0, 7200, 0, 0, 8352, 0, 0, 0);
 
-
 -- Spawn: Geist der Gordok
 DELETE FROM `creature` WHERE `id`=11446;
 INSERT INTO `creature` (`guid`,`id`,`map`,`modelid`,`equipment_id`,`position_x`,`position_y`,`position_z`,`orientation`,`spawntimesecs`,`spawndist`,`currentwaypoint`,`curhealth`,`curmana`,`DeathState`,`MovementType`) VALUES
@@ -609,7 +585,6 @@ INSERT INTO `creature` (`guid`,`id`,`map`,`modelid`,`equipment_id`,`position_x`,
 (134895, 11446, 429, 13093, 1, 0, 0, 902.99, 442.14, 40.4793, 2.68781, 7200, 0, 0, 1, 0, 0, 0),
 (134896, 11446, 429, 13093, 1, 0, 0, 794.689, 394.92, 40.4798, 1.20428, 7200, 0, 0, 1, 0, 0, 0);
 
-
 -- NPC: Grimmlingflitzer der Eldreth
 UPDATE `creature_template` SET `ScriptName`="" WHERE `entry`=14398;
 DELETE FROM `creature` WHERE `id`=14398;
@@ -624,7 +599,6 @@ INSERT INTO `creature` (`guid`,`id`,`map`,`modelid`,`equipment_id`,`position_x`,
 (133175, 14398, 429, 8471, 0, -27.428, 507.017, -3.48379, 1.85005, 7200, 0, 0, 6891, 6867, 0, 0),
 (133176, 14398, 429, 8471, 0, -17.0975, 531.373, 28.6855, 0.087266, 7200, 0, 0, 6891, 6867, 0, 0);
 
-
 -- NPC: Hauptmann der Gordok
 UPDATE `creature_template` SET `ScriptName`="", `gossip_menu_id`=5746 WHERE `entry`=11445;
 DELETE FROM `gossip_menu` WHERE `id`=5746;
@@ -637,7 +611,6 @@ INSERT INTO `creature` (`guid`,`id`,`map`,`modelid`,`equipment_id`,`position_x`,
 (134879, 11445, 429, 11564, 0, 667.484, 467.305, 29.5391, 4.20624, 7200, 0, 0, 14214, 4738, 0, 0),
 (134880, 11445, 429, 11564, 0, 676.629, 460.347, 29.5408, 3.19395, 7200, 0, 0, 14214, 4738, 0, 0),
 (134881, 11445, 429, 11564, 0, 681.03, 504.275, 29.5437, 1.48353, 7200, 0, 0, 14214, 4738, 0, 0);
-
 
 -- NPC: Hexenmeister der Gordok
 UPDATE `creature_template` SET `ScriptName`="", `gossip_menu_id`=5746 WHERE `entry`=11448;
@@ -658,7 +631,6 @@ INSERT INTO `creature` (`guid`,`id`,`map`,`modelid`,`equipment_id`,`position_x`,
 (134909, 11448, 429, 14423, 0, 425.414, 543.026, -18.26, 3.61283, 7200, 0, 0, 10365, 16794, 0, 0),
 (134910, 11448, 429, 14423, 0, 584.833, 544.572, -25.3159, 2.28638, 7200, 0, 0, 10365, 16794, 0, 0),
 (134911, 11448, 429, 14423, 0, 577.443, 549.148, -25.3152, 5.37561, 7200, 0, 0, 10365, 16794, 0, 0);
-
 
 -- NPC: Hochgeborenenbeschwörer
 UPDATE `creature_template` SET `ScriptName`="" WHERE `entry`=11466;
@@ -683,14 +655,11 @@ INSERT INTO `creature` (`guid`,`id`,`map`,`modelid`,`equipment_id`,`position_x`,
 (136166, 11466, 429, 11207, 0, -110.415, 855.412, -23.4797, 5.75959, 7200, 0, 0, 523, 6351, 0, 0),
 (136167, 11466, 429, 11207, 0, -92.051, 876.475, -23.6719, 5.42797, 7200, 0, 0, 523, 6351, 0, 0);
 
-
 -- NPC: Hyäne der Gordok
 UPDATE `creature_template` SET `gossip_menu_id`=5746, `ScriptName`="" WHERE `entry`=11450;
 
-
 -- NPC: Höllenrufer der Wildhufe
 UPDATE `creature_template` SET `ScriptName`="" WHERE `entry`=11457;
-
 
 -- NPC: Knot Zwingschraub
 UPDATE `creature_template` SET `gossip_menu_id`=5667, `ScriptName`="" WHERE `entry`=14338;
@@ -700,8 +669,7 @@ DELETE FROM `creature` WHERE `id`=14338;
 INSERT INTO `creature` (`guid`,`id`,`map`,`modelid`,`equipment_id`,`position_x`,`position_y`,`position_z`,`orientation`,`spawntimesecs`,`spawndist`,`currentwaypoint`,`curhealth`,`curmana`,`DeathState`,`MovementType`) VALUES
 (122716, 14338, 429, 14381, 0, 581.082, 523.293, -25.3194, 2.72271, 7200, 0, 0, 2215, 0, 0, 0);
 
-
--- NPC:
+-- NPC: Gordok Mage-Lord
 UPDATE `creature_template` SET `gossip_menu_id`=5746, `ScriptName`="" WHERE `entry`=11444;
 DELETE FROM `creature` WHERE `id`=11444;
 INSERT INTO `creature` (`guid`,`id`,`map`,`modelid`,`equipment_id`,`position_x`,`position_y`,`position_z`,`orientation`,`spawntimesecs`,`spawndist`,`currentwaypoint`,`curhealth`,`curmana`,`DeathState`,`MovementType`) VALUES
@@ -732,10 +700,8 @@ INSERT INTO `creature` (`guid`,`id`,`map`,`modelid`,`equipment_id`,`position_x`,
 (134872, 11444, 429, 11537, 0, 328.938, 169.844, 2.85461, 3.3161, 7200, 5, 0, 9745, 10680, 0, 1),
 (134873, 11444, 429, 11537, 0, 350.451, 203.075, 11.2928, 1.44862, 7200, 0, 0, 9745, 10680, 0, 0);
 
-
 -- NPC: Manaeruption
 UPDATE `creature_template` SET `ScriptName`="" WHERE `entry`=14397;
-
 
 -- NPC: Manarest
 DELETE FROM `creature` WHERE `id`=11483;
@@ -1040,7 +1006,6 @@ INSERT INTO `creature` (`guid`,`id`,`map`,`modelid`,`equipment_id`,`position_x`,
 (134969, 11455, 429, 7649, 0, 53.4373, -402.78, -4.21671, 0.796834, 7200, 0, 0, 5490, 7519, 0, 0),
 (134970, 11455, 429, 7649, 0, -38.6936, -419.706, -4.21746, 1.92639, 7200, 0, 0, 5490, 7519, 0, 0);
 
-
 -- NPC: Teufelspeitscher
 UPDATE `creature_template` SET `ScriptName`="" WHERE `entry`=13197;
 DELETE FROM `creature` WHERE `id`=13197;
@@ -1056,7 +1021,6 @@ INSERT INTO `creature` (`guid`,`id`,`map`,`modelid`,`equipment_id`,`position_x`,
 (134781, 13197, 429, 13110, 0, 42.5376, -760.358, -25.0819, 3.63334, 7200, 5, 0, 12954, 4326, 0, 1),
 (134782, 13197, 429, 13110, 0, 61.9258, -648.15, -25.1335, 5.81871, 7200, 0, 0, 12954, 4326, 0, 0),
 (134784, 13197, 429, 13110, 0, 15.1764, -402.726, -4.138, 4.92183, 7200, 0, 0, 12954, 4326, 0, 0);
-
 
 -- NPC: Todespeitsche
 UPDATE `creature_template` SET `ScriptName`="" WHERE `entry`=13285;
@@ -1077,7 +1041,6 @@ INSERT INTO `creature` (`guid`,`id`,`map`,`modelid`,`equipment_id`,`position_x`,
 (138138, 13285, 429, 13172, 0, 43.6181, -195.337, -53.1882, 1.50003, 7200, 0, 0, 16704, 0, 0, 0),
 (138139, 13285, 429, 13172, 0, 81.9403, -204.662, -56.8382, 3.12159, 7200, 0, 0, 16704, 0, 0, 0);
 
-
 -- NPC: Trugbild der Eldreth
 UPDATE `creature_template` SET `ScriptName`="" WHERE `entry`=11475;
 DELETE FROM `creature` WHERE `id`=11475;
@@ -1093,7 +1056,6 @@ INSERT INTO `creature` (`guid`,`id`,`map`,`modelid`,`equipment_id`,`position_x`,
 (137693, 11475, 429, 14368, 0, 21.8259, 551.752, -4.39944, 2.73993, 7200, 0, 0, 8613, 0, 0, 0),
 (137694, 11475, 429, 14368, 0, 119.8, 427.561, -4.30938, 1.43117, 7200, 0, 0, 8613, 0, 0, 0),
 (137696, 11475, 429, 14368, 0, 57.5582, 546.248, -4.3122, 0.122173, 7200, 0, 0, 8613, 0, 0, 0);
-
 
 -- NPC: Verbleibender Monsterrest
 UPDATE `creature_template` SET `ScriptName`="" WHERE `entry`=11484;
@@ -1115,7 +1077,6 @@ INSERT INTO `creature` (`guid`,`id`,`map`,`modelid`,`equipment_id`,`position_x`,
 (137857, 11484, 429, 14254, 0, -149.626, 796.422, -24.5794, 1.65261, 7200, 0, 0, 14000, 9476, 0, 0),
 (137859, 11484, 429, 14254, 0, -113.726, 727.255, -24.5774, 2.43377, 7200, 0, 0, 14000, 9476, 0, 0);
 
-
 -- NPC: Verräter der Wildhufe
 UPDATE `creature_template` SET `ScriptName`="" WHERE `entry`=11454;
 DELETE FROM `creature` WHERE `id`=11454;
@@ -1128,10 +1089,8 @@ INSERT INTO `creature` (`guid`,`id`,`map`,`modelid`,`equipment_id`,`position_x`,
 (134957, 11454, 429, 10032, 0, -17.7285, -459.476, -4.14758, 4.55531, 7200, 0, 0, 7842, 0, 0, 0),
 (134958, 11454, 429, 10032, 0, -80.4437, -401.602, -4.13549, 1.8326, 7200, 0, 0, 7842, 0, 0, 0);
 
-
 -- NPC: Versorger der Shen'dralar
 UPDATE `creature_template` SET `ScriptName`="" WHERE `entry`=14371;
-
 
 -- NPC: Versteinerter Treant
 UPDATE `creature_template` SET `ScriptName`="" WHERE `entry`=11458;
@@ -1159,7 +1118,6 @@ INSERT INTO `creature` (`guid`,`id`,`map`,`modelid`,`equipment_id`,`position_x`,
 (135069, 11458, 429, 2078, 0, -13.5503, 194.196, -3.4756, 0.255774, 7200, 5, 0, 8352, 0, 0, 1),
 (135070, 11458, 429, 2078, 0, -94.5732, 357.768, -3.47957, 0.014872, 7200, 0, 0, 8352, 0, 0, 0);
 
-
 -- NPC: Versteinerter Wächter
 UPDATE `creature_template` SET `ScriptName`="" WHERE `entry`=14303;
 DELETE FROM `creature` WHERE `id`=14303;
@@ -1174,7 +1132,6 @@ INSERT INTO `creature` (`guid`,`id`,`map`,`modelid`,`equipment_id`,`position_x`,
 (138107, 14303, 429, 5848, 0, 74.1333, 265.431, -8.13567, 3.33358, 7200, 0, 0, 6960, 0, 0, 0),
 (138109, 14303, 429, 5848, 0, 118.751, 196.82, -3.39151, 0.244346, 7200, 0, 0, 6960, 0, 0, 0),
 (138110, 14303, 429, 5848, 0, -101.768, 352.196, -4.99126, 4.50226, 7200, 0, 0, 6960, 0, 0, 0);
-
 
 -- NPC:
 UPDATE `creature_template` SET `ScriptName`="" WHERE `entry`=11440;
@@ -1204,7 +1161,6 @@ INSERT INTO `creature` (`guid`,`id`,`map`,`modelid`,`equipment_id`,`position_x`,
 (51035, 11440, 1, 12471, 0, -4350.39, 1198.64, 150.608, 5.12582, 300, 15, 0, 3189, 0, 0, 1),
 (51036, 11440, 1, 12471, 0, -4161.89, 1276.92, 161.26, 3.14159, 300, 0, 0, 3189, 0, 0, 0),
 (51037, 11440, 1, 12471, 0, -4182.18, 1309.34, 161.198, 3.52164, 300, 15, 0, 3189, 0, 0, 1);
-
 
 -- NPC: Wucherborkenzermalmer
 UPDATE `creature_template` SET `ScriptName`="" WHERE `entry`=13021;
