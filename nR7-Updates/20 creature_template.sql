@@ -1,0 +1,2 @@
+-- NPC: Gordok Mage-Lord schaden zuhoch.
+UPDATE `creature_template` SET `ScriptName`="", `gossip_menu_id`=5746, `mindmg`=50, `maxdmg`=90, `dmg_multiplier`=5, `baseattacktime`=2000, `rangedattackpower`=24 WHERE `entry`=11444;
