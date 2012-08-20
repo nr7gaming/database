@@ -1,7 +1,3 @@
--- Update Kriegsgolem zu RaR Rank!
-UPDATE `creature_template` SET
-    `rank` = 4,
-WHERE `entry` = 2751;
 -- Loot fix von RaR Mob: Kriegsgolem (http://de.wowhead.com/npc=2751#drops)
 DELETE FROM `creature_loot_template` WHERE (`entry`=2751) AND (`item`=7542);
 INSERT INTO `creature_loot_template` (`entry`, `item`, `ChanceOrQuestChance`, `groupid`, `mincountOrRef`, `maxcount`, `lootcondition`, `condition_value1`, `condition_value2`) VALUES (2751, 7542, 5, 1, 1, 1, 0, 0, 0);

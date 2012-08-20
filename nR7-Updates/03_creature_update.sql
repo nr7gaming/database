@@ -1,8 +1,3 @@
--- Update Rank für Anathemus
-UPDATE `creature_template` SET
-    `rank` = 4,
-WHERE `entry` = 2754;
-
 -- Lootfix: Anathemus
 DELETE FROM `creature_loot_template` WHERE `entry` = 2754;
 INSERT INTO `creature_loot_template` VALUES 
